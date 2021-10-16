@@ -1,5 +1,7 @@
 # Calculadora financiera
 
+Calculadora de factores financieros basicos.
+
 ## Funciones
 
 
@@ -25,4 +27,15 @@ ejemplo: ```A/G(0.08, 10)```
 *utilize solo mayusculas*
 
 
+## Instalacion
+
+```
+git clone https://github.com/JosDuran/calcfiananzas.git
+python3 -m venv unentor
+source unentor/bin/activate
+pip3 install -r requirements.txt
+flask run
+```
+## Screenshoot
+![captura](captura.jpeg)
 
