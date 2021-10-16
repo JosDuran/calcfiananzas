@@ -27,7 +27,7 @@ ejemplo: ```A/G(0.08, 10)```
 *utilize solo mayusculas*
 
 
-## Instalacion
+## Deployment
 
 ```
 git clone https://github.com/JosDuran/calcfiananzas.git
