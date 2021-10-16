@@ -1,6 +1,6 @@
 # Calculadora financiera
 
-Calculadora de factores financieros basicos.
+Calculadora de factores financieros basicos, puede calcular tanto factores como expresiones algebraicas en funcion de dichos factores.
 
 ## Funciones
 
