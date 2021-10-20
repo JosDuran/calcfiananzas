@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
-{% block content %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Calculadora</title>    
-</head>
+{% block head %}
+<script type="text/javascript" src="../static/senddata.js"></script>  
+{% endblock %}
+
+{% block content %}      
+
 <body>
     <a href = '/login'>   login to this site</a>
  
@@ -15,11 +14,11 @@
             <h2>Calculadora Financiera</h2>
         </div>
 
-    <form class="w3-container" method = 'POST' action = '/replaceandeval'>
+    <form class="w3-container"  id = 'calcForm'  >
 
-        <textarea class="w3-input w3-border" style="resize:none" name = 'expression'></textarea>
+        <textarea class="w3-input w3-border" style="resize:none" name = 'expression' id = 'exptextid'></textarea>
         <br>
-        <input type="submit" class="w3-button w3-black" value="Evaluar">
+        <input type="submit" class="w3-button w3-black" value="Evaluar" id = 'boton'>
 
     </form>
     </div>
