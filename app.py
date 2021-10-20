@@ -37,7 +37,8 @@ def home():
 @app.route('/replaceandeval', methods= ['GET','POST'])
 def replaceandeval ():
     
-    aexp = request.json['expr']
+    aold = request.json['expr']
+    aexp = aold
     aexp = aexp.replace('F/P', 'F_P')
     aexp = aexp.replace('P/F', 'P_F')
     aexp = aexp.replace('P/A', 'P_A')
@@ -47,7 +48,7 @@ def replaceandeval ():
     aexp = aexp.replace('P/G', 'P_G')
     aexp = aexp.replace('A/G', 'A_G')
     ares =  str(eval(aexp))
-    resnewf = aexp + '='+ ares    
+    resnewf = aold + '='+ ares    
     return jsonify( {'res' : ares, 'resnf' : resnewf})
  
 
