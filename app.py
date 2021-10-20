@@ -6,6 +6,13 @@ def F_P(tasa: float, n: float ):
 def P_F(tasa: float, n: float):
     return (1+tasa)**(-n)
 
+def P_A( tasa: float, n: float):
+    temp = ((1+tasa)**n - 1)/(tasa* (1+tasa)**n)
+    return temp
+
+def A_P(tasa: float, n: float):
+    return P_A(tasa,n)**(-1)
+
 def F_A(tasa: float, n: float):
     temp = ((1+tasa)**n - 1)/(tasa)
     return temp

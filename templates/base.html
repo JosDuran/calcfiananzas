@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     {% block head %}
+    <style>
+        .headerTwoDiv{
+            margin:1% auto;
+            margin-right: auto; margin-left: auto; width: 70%; 
+            padding-top: 11px;
+        }
+        </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<link rel="stylesheet" href="{{url_for('static', filename='/css/w3.css')}}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
     {% endblock %}
@@ -13,7 +20,7 @@
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
         {% block footer %}
-        &copy; Copyright 2019 by <a href="http://www.agilsoft.com/">you</a>.
+        &copy; softwarepropio <a href="http://www.financalc.com/">you</a>.
         {% endblock %}
     </div>
 </body>
