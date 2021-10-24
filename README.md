@@ -17,6 +17,9 @@ ejemplo: ```P/F(0.08, 10)```
 **F/A(tasa: real, n: entero o real)**  --> F/A dada una tasa y el numero de periodos
 ejemplo: ```F/A(0.08, 10)```
 
+**A/F(tasa: real, n: entero o real)**  --> A/F dada una tasa y el numero de periodos
+ejemplo: ```A/F(0.08, 10)```
+
 **A/P(tasa: real, n: entero o real)**  --> A/P dada una tasa y el numero de periodos
 ejemplo: ```A/P(0.08, 10)```
 
