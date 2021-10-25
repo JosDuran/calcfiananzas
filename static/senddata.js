@@ -1,7 +1,9 @@
 function enviardata(e) {
     
     
-        var exptoeval = $('.w3-input').val();
+        var exptoeval = $('#exptextid').val();
+        
+        
       
           // ajax the JSON to the server
       $.ajax({
@@ -11,16 +13,18 @@ function enviardata(e) {
           data: JSON.stringify({'expr':exptoeval}),
           dataType: 'json',        
           success: function (response) {       
-              $('.w3-input').val(response.resnf)              
+              $('#exptextid').val(response.resnf)              
            }
           
       });
-      
-      
+ 
+            
       // stop link reloading the page
       event.preventDefault();
+      var txt = $('#historybox');
+      txt.val(  txt.val() +'\n' + exptoeval );
      
-  
+      
       }
   
   window.onload = function(){

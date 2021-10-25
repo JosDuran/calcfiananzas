@@ -45,5 +45,5 @@ pip3 install -r requirements.txt
 flask run
 ```
 ## Screenshoot
-![captura](captura.jpeg)
+![captura](captura.png)
 
